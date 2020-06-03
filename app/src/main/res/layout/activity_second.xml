@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+    
+    
+    <com.denzcoskun.imageslider.ImageSlider
+        android:layout_marginTop="30sp"
+        app:auto_cycle="true"
+        app:delay="0"
+        android:id="@+id/imageSlider2"
+        app:period="1000"
+        android:layout_margin="20dp"
+        app:error_image="@drawable/slider"
+        app:placeholder="@drawable/slider"
+        app:corner_radius="20"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <LinearLayout
+        android:background="@color/bubbles"
+        android:orientation="vertical"
+        android:padding="10sp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Start servicing with Vehicle Service"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="30sp"
+            android:text="Already have a account?Log in here"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_marginTop="10sp"
+            android:onClick="login"
+            android:layout_gravity="center"
+            android:background="@drawable/login_design"
+            android:textColor="@color/a_green"
+            android:text="@string/log_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="30sp"
+            android:text="Don't have a account?Create account here"
+            android:textStyle="italic"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginTop="10sp"
+            android:layout_gravity="center"
+            android:onClick="signup"
+            android:background="@drawable/login_design"
+            android:textColor="@color/a_green"
+            android:text="Sign Up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
