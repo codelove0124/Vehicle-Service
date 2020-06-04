@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">Vehicle Service</string>
     <string name="log_in">Log In</string>
+    <string name="enter_your_first_name">Enter your First Name</string>
+    <string name="enter_your_last_name">Enter your last Name</string>
+    <string name="sign_up">SIGN UP</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

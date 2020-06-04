@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiceBook">
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="180sp"/>
+    <TextView
+        android:id="@+id/title1"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:layout_marginTop="150sp"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_below="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="10sp"
+                android:text="Go Digital"
+                android:drawablePadding="10sp"
+                android:drawableStart="@drawable/ic_baseline_credit_card"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_credit_card" />
+            <TextView
+                android:layout_marginLeft="10sp"
+                android:textStyle="italic"
+                android:text="Convenient online payment options."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"
+                android:text="Pick-Up-Drop"
+                android:drawablePadding="10sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_local_shipping" />
+            <TextView
+                android:layout_marginLeft="10sp"
+                android:textStyle="italic"
+                android:text="Service from the comfort of your home/office."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"
+                android:text="Our Promise"
+                android:drawablePadding="10sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_favorite" />
+            <TextView
+                android:layout_marginLeft="10sp"
+                android:textStyle="italic"
+                android:text="100% satisfaction guaranted ."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="10sp"
+                android:text="Expert Service"
+                android:drawablePadding="10sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_accessibility" />
+            <TextView
+                android:layout_marginLeft="10sp"
+                android:textStyle="italic"
+                android:text="Skilled mechanics for your every need."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/book"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:text="Book Your Service"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

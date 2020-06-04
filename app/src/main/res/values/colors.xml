@@ -9,4 +9,12 @@
     <color name="a_green">#8db600</color>
     <color name="bronze">#cd7f32</color>
     <color name="blue">#5d8aa8</color>
+    <color name="amethyst">#9966cc</color>
+    <color name="b_orange">	#cc5500</color>
+    <color name="canary">#ffff99</color>
+    <color name="cardinal">#c41e3a</color>
+    <color name="pink">#ffb7c5</color>
+    <color name="rose">#fbcce7</color>
+    <color name="copper">#b87333</color>
+    <color name="lavender">#734f96</color>
 </resources>

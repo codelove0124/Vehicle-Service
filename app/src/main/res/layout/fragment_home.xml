@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bubbles"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragments.Home">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <LinearLayout
+               android:orientation="vertical"
+               android:paddingBottom="20sp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:text="CAR SERVICES"
+                   android:textSize="17sp"
+                   android:layout_marginLeft="20sp"
+                   android:layout_marginTop="10sp"
+                   android:textStyle="bold"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+
+
+
+        <GridLayout
+            android:layout_marginTop="25sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:rowCount="3"
+            android:columnCount="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bodypaint"
+                android:layout_width="0sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginLeft="5sp"
+                android:layout_height="100sp"
+                app:cardBackgroundColor="@color/colorAccent"
+                app:cardCornerRadius="20sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+                <RelativeLayout
+                    android:padding="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="Full Body Painting"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carspa"
+                android:layout_width="0sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_height="100sp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                app:cardCornerRadius="20sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+                <RelativeLayout
+                    android:padding="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="Complete Car Spa"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ac"
+                android:layout_width="0sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_height="100sp"
+                app:cardBackgroundColor="@color/a_green"
+                app:cardCornerRadius="20sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+                <RelativeLayout
+                    android:padding="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="AC Service"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/interior"
+                android:layout_width="0sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginLeft="5sp"
+                android:layout_height="100sp"
+                app:cardBackgroundColor="@color/amethyst"
+                app:cardCornerRadius="20sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+                <RelativeLayout
+                    android:padding="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="Interior Detailing"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/express"
+                android:layout_width="0sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_height="100sp"
+                app:cardBackgroundColor="@color/bronze"
+                app:cardCornerRadius="20sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+                <RelativeLayout
+                    android:padding="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="Express Service"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/scrach"
+                android:layout_width="0sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginLeft="5sp"
+                android:layout_height="100sp"
+                app:cardBackgroundColor="@color/pink"
+                app:cardCornerRadius="20sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+                <RelativeLayout
+                    android:padding="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="Scratch Removal"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/polish"
+                android:layout_width="0sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginLeft="5sp"
+                android:layout_height="100sp"
+                app:cardBackgroundColor="@color/copper"
+                app:cardCornerRadius="20sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+                <RelativeLayout
+                    android:padding="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="Car Polish"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/repair"
+                android:layout_width="0sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_height="100sp"
+                app:cardBackgroundColor="@color/lavender"
+                app:cardCornerRadius="20sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+                <RelativeLayout
+                    android:padding="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="Repair Job"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/oil"
+                android:layout_width="0sp"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_height="100sp"
+                app:cardBackgroundColor="@color/cardinal"
+                app:cardCornerRadius="20sp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1">
+                <RelativeLayout
+                    android:padding="5sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:text="Oil Change Package"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+           </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingBottom="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="BIKE SERVICES"
+                    android:textSize="17sp"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="10sp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <GridLayout
+                    android:rowCount="1"
+                    android:columnCount="3"
+                    android:layout_marginTop="20sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0sp"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_height="100sp"
+                        app:cardBackgroundColor="@color/a_green"
+                        app:cardCornerRadius="20sp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1">
+                        <RelativeLayout
+                            android:padding="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:text="General Service"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0sp"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_height="100sp"
+                        app:cardBackgroundColor="@color/amethyst"
+                        app:cardCornerRadius="20sp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1">
+                        <RelativeLayout
+                            android:padding="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:text="Premium Bike Service"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0sp"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_height="100sp"
+                        app:cardBackgroundColor="@color/pink"
+                        app:cardCornerRadius="20sp"
+                        android:layout_columnWeight="1"
+                        android:layout_rowWeight="1">
+                        <RelativeLayout
+                            android:padding="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:text="Repair Job"
+                                android:layout_centerInParent="true"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</ScrollView>
