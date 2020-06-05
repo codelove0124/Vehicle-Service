@@ -22,7 +22,7 @@ import java.util.List;
 public class Home extends Fragment {
 
     ImageSlider slider;
-    CardView bodypaint,carspa,ac,interior,express,scratch,polish,repair,oil;
+    CardView bodypaint,carspa,ac,interior,express,scratch,polish,repair,oil,gservice,pservice,brepair;
     Bundle b=new Bundle();
 
     public Home() {
@@ -45,11 +45,15 @@ public class Home extends Fragment {
         polish=v.findViewById(R.id.polish);
         repair=v.findViewById(R.id.repair);
         oil=v.findViewById(R.id.oil);
+        gservice=v.findViewById(R.id.gservice);
+        pservice=v.findViewById(R.id.pservice);
+        brepair=v.findViewById(R.id.brepair);
 
         bodypaint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                b.putString("type","car");
                 b.putString("title","Full Body Painting");
                 b.putInt("picture",R.drawable.body);
                 loadfrag(b);
@@ -59,6 +63,7 @@ public class Home extends Fragment {
         scratch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                b.putString("type","car");
                 b.putString("title","Scratch Removal");
                 b.putInt("picture",R.drawable.scratch);
                 loadfrag(b);
@@ -67,6 +72,7 @@ public class Home extends Fragment {
         polish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                b.putString("type","car");
                 b.putString("title","Car Polish");
                 b.putInt("picture",R.drawable.polish);
                 loadfrag(b);
@@ -75,6 +81,7 @@ public class Home extends Fragment {
         carspa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                b.putString("type","car");
                 b.putString("title","Complete Car Spa");
                 b.putInt("picture",R.drawable.spa);
                 loadfrag(b);
@@ -83,6 +90,7 @@ public class Home extends Fragment {
         ac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                b.putString("type","car");
                 b.putString("title","Car AC Service");
                 b.putInt("picture",R.drawable.ac);
                 loadfrag(b);
@@ -91,6 +99,7 @@ public class Home extends Fragment {
         interior.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                b.putString("type","car");
                 b.putString("title","Car Interior Detailing");
                 b.putInt("picture",R.drawable.interior);
                 loadfrag(b);
@@ -99,6 +108,7 @@ public class Home extends Fragment {
         express.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                b.putString("type","car");
                 b.putString("title","Car Express Service");
                 b.putInt("picture",R.drawable.express);
                 loadfrag(b);
@@ -107,6 +117,7 @@ public class Home extends Fragment {
         repair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                b.putString("type","car");
                 b.putString("title","Car Repair Job");
                 b.putInt("picture",R.drawable.repair);
                 loadfrag(b);
@@ -115,8 +126,39 @@ public class Home extends Fragment {
         oil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                b.putString("type","car");
                 b.putString("title","Car Oil Change Package");
                 b.putInt("picture",R.drawable.oil);
+                loadfrag(b);
+            }
+        });
+
+        gservice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                b.putString("type","bike");
+                b.putString("title","General Bike Service");
+                b.putInt("picture",R.drawable.gservice);
+                loadfrag(b);
+
+            }
+        });
+        pservice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                b.putString("type","bike");
+                b.putString("title","Premium Bike Service");
+                b.putInt("picture",R.drawable.pservice);
+                loadfrag(b);
+            }
+        });
+        brepair.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                b.putString("type","bike");
+                b.putString("title","Bike Repair Job");
+                b.putInt("picture",R.drawable.brepair);
                 loadfrag(b);
             }
         });
